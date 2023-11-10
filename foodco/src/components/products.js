@@ -7,8 +7,8 @@ function Products(props) {
       {props.products.map((product) => {
         return (
           <div key={product.id}>
-            <h2>{product.title}</h2>
-            <p>{product.body}</p>
+            <h2>{product.name}</h2>
+            <p>{product.description}</p>
           </div>
         )
       })}
