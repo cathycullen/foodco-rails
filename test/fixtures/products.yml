@@ -1,0 +1,29 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  description: MyText
+  image_descr: MyString
+  qty_available: 1
+  ingredients: MyText
+  original_price: 1.5
+  discounted_price: 1.5
+  pickup_date: 2023-11-10
+  pickkup_time: 2023-11-10 12:19:00
+  item_category: MyText
+  suprise: false
+  rating: MyString
+
+two:
+  name: MyString
+  description: MyText
+  image_descr: MyString
+  qty_available: 1
+  ingredients: MyText
+  original_price: 1.5
+  discounted_price: 1.5
+  pickup_date: 2023-11-10
+  pickkup_time: 2023-11-10 12:19:00
+  item_category: MyText
+  suprise: false
+  rating: MyString
