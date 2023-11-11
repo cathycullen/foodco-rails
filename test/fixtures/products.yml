@@ -9,10 +9,11 @@ one:
   original_price: 1.5
   discounted_price: 1.5
   pickup_date: 2023-11-10
-  pickkup_time: 2023-11-10 12:19:00
+  pickkup_time: 2023-11-10 20:02:42
   item_category: MyText
   suprise: false
   rating: MyString
+  store: one
 
 two:
   name: MyString
@@ -23,7 +24,8 @@ two:
   original_price: 1.5
   discounted_price: 1.5
   pickup_date: 2023-11-10
-  pickkup_time: 2023-11-10 12:19:00
+  pickkup_time: 2023-11-10 20:02:42
   item_category: MyText
   suprise: false
   rating: MyString
+  store: two
