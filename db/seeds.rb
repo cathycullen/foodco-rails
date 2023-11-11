@@ -8,7 +8,6 @@
 
 Store.destroy_all
 Product.destroy_all
- 
 
 store1 = Store.create!(
   name: "Jets Pizza",
@@ -36,7 +35,7 @@ pizza = Product.create!(
   store_id: store1.id
 )
 
-surprise = Product.create(
+surprise = Product.create!(
   name: "Surprise Bag",
   description: "Assortment of Goodies",
   image_descr: "image",

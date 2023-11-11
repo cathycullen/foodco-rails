@@ -1,13 +1,33 @@
 import React from "react";
-import { FaGithub } from "react-icons/fa";
+import { FaDivide, FaGithub } from "react-icons/fa";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Card from "react-bootstrap/Card";
 import Container from "react-bootstrap/Container";
 import Col from "react-bootstrap/Col";
-import Row from "react-bootstrap/Row"; // Add Row component
+import Row from "react-bootstrap/Row"; 
+import Button from "react-bootstrap/Button"
 import "bootstrap/dist/css/bootstrap.min.css";
 
+function ShowCard(product) {
+  return(
+    <div>
+      <Row id={product.id}>
+       <Card
+         style={{
+           width: "30rem",
+           margin: "10px auto"
+         }}
+       >
+        <Card.Img variant="top" src="holder.js/100px180" />
+        <Card.Title>{product.name}</Card.Title>
+        <Card.Text>{product.description}</Card.Text>
+        <Button variant="success" size="lg">Reserve</Button>
+       </Card>
+     </Row>
+     </div>
+   )
+}
 function Products(props) {
   return (
     <div>
@@ -40,7 +60,7 @@ function Products(props) {
             </Card>
 
             {/* Group Card: Card 1 and Card 2 aligned horizontally */}
-            <Row id="pizzas">
+            <Row id="old">
               <Col xs={12} md={6} lg={6}>
                 <Card
                   style={{
@@ -48,7 +68,7 @@ function Products(props) {
                     margin: "10px auto",
                     padding: "20px",
                   }}
-                >
+                >Hello Old
                   {/* ... (unchanged) */}
                 </Card>
               </Col>
@@ -90,6 +110,20 @@ function Products(props) {
                 </Card>
               </Col>
             </Row>
+            </div>
+        </Container>
+          <div
+            style={{ textAlign: "center", margin: "10px 0" }}
+          >
+            <h2>New Layout</h2>
+          </div>
+        <Container>
+          <div className="products-list">   
+            {props.products.map((product) => {
+              return (
+                ShowCard(product)
+              );
+            })}
           </div>
         </Container>
 
