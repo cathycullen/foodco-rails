@@ -16,12 +16,14 @@ function ShowCard(product) {
        <Card
          style={{
            width: "30rem",
+           padding: "20px",
            margin: "10px auto"
          }}
        >
         <Card.Img variant="top" src="holder.js/100px180" />
         <Card.Title>{product.name}</Card.Title>
-        <Card.Text>{product.description}</Card.Text>
+        <Card.Subtitle>{product.description}</Card.Subtitle>
+        <Card.Text>{product.ingredients}</Card.Text>
         <Button variant="success" size="lg">Reserve</Button>
        </Card>
      </Row>
