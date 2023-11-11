@@ -24,6 +24,8 @@ function ShowCard(product) {
         <Card.Title>{product.name}</Card.Title>
         <Card.Subtitle>{product.description}</Card.Subtitle>
         <Card.Text>{product.ingredients}</Card.Text>
+        <Card.Text>Rating: {product.rating}</Card.Text>
+        <p>Price: ${product.discounted_price}</p>
         <Button variant="success" size="lg">Reserve</Button>
        </Card>
      </Row>
