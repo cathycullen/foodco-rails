@@ -6,7 +6,23 @@
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
 
-Product.create(
+Store.destroy_all
+Product.destroy_all
+ 
+
+store1 = Store.create!(
+  name: "Jets Pizza",
+  address: "5058 N Clark St, Chicago, IL",
+  description: "Jets Pizza of Andersonville",
+)
+
+store2 = Store.create!(
+  name: "Pokiology",
+  address: "124600 N Magnolia Ave, Chicago, IL",
+  description: "Pokiology Uptown",
+)
+
+pizza = Product.create!(
   name: "Pepperoni Pizza",
   description: "Delicious Pie",
   image_descr: "image",
@@ -16,10 +32,11 @@ Product.create(
   discounted_price: 5,
   item_category: "meal",
   suprise: false,
-  rating: "****"
+  rating: "****",
+  store_id: store1.id
 )
 
-Product.create(
+surprise = Product.create(
   name: "Surprise Bag",
   description: "Assortment of Goodies",
   image_descr: "image",
@@ -30,4 +47,5 @@ Product.create(
   item_category: "meal",
   suprise: true,
   rating: "****",
+  store_id: store2.id
 )
