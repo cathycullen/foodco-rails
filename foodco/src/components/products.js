@@ -9,6 +9,7 @@ import Row from "react-bootstrap/Row";
 import Button from "react-bootstrap/Button"
 import "bootstrap/dist/css/bootstrap.min.css";
 
+
 function ShowCard(product) {
   return(
     <div>
@@ -119,7 +120,7 @@ function Products(props) {
           <div
             style={{ textAlign: "center", margin: "10px 0" }}
           >
-            <h2>New Layout</h2>
+            <h2>Todays Offerings In Your Area</h2>
           </div>
         <Container>
           <div className="products-list">   
