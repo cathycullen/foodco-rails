@@ -23,10 +23,10 @@ store2 = Store.create!(
 
 pizza = Product.create!(
   name: "Pepperoni Pizza",
-  description: "Delicious Pie",
+  description: "World Famous Pie",
   image_descr: "image",
   qty_available: 10,
-  ingredients: "gluten, sauce, mozzarella cheese, pepperoni",
+  ingredients: "sauce, mozzarella cheese, pepperoni, gluten",
   original_price: 20,
   discounted_price: 5,
   item_category: "meal",
